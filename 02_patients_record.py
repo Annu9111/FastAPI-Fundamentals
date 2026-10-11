@@ -17,4 +17,10 @@ def greet():
 def about():
     return {'message':'A fully functional api to manage patients record'}
 
+@app.get('/view')
+def view():
+    data = load_data()
+    return data
+    
+
 
